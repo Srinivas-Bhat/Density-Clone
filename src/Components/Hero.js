@@ -71,6 +71,7 @@ const Container = styled.div`
       font-weight: 100;
       font-size: 24px;
       color: #e7e7ea;
+      text-align: center;
     }
   }
   .image-wrapper {
