@@ -29,7 +29,7 @@ const Bar = styled.nav`
   font-family: "Poppins", sans-serif;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
   font-size: 18px;
   // background-image: linear-gradient(#2a5d32, rgba(0, 0, 0, 0.2));
   background-color: #2a5d3233;

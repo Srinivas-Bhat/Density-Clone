@@ -66,7 +66,7 @@ const ThreeSteps = () => {
 
 const Container = styled.div`
   background-color: #000 !important;
-  width: 1446px;
+  width: 100vw;
   margin: auto;
   .title-wrapper {
     width: 936px;
@@ -90,6 +90,7 @@ const Container = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow-x: hidden;
     .flex-container {
       display: flex;
       justify-content: center;

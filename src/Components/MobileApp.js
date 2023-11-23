@@ -116,7 +116,9 @@ const Sections = styled.div`
   justify-content: center;
   align-items: center;
   height: 440px;
-  width: 1440px;
+  width: 90vw;
+  padding: 0px 40px;
+  box-sizing: border-box;
   margin: 50px auto 100px;
   gap: 15px;
   .promotion-wrapper {

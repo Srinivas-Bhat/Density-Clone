@@ -7,7 +7,6 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 const StartWithUs = () => {
-
   useEffect(() => {
     Aos.init();
   }, []);
@@ -56,8 +55,9 @@ const StartWithUs = () => {
 const Container = styled.div`
   background-color: #fff !important;
   padding: 120px 50px;
+  box-sizing: border-box;
   .description-wrapper {
-    width: 1125px;
+    // width: 100vw;
     height: 167px;
     margin: auto;
     display: flex;
@@ -65,6 +65,7 @@ const Container = styled.div`
     align-items: center;
     flex-direction: column;
     padding-bottom: 91px;
+    box-sizing: border-box;
     h1 {
       font-size: 72px;
       letter-spacing: -2.1px;
@@ -82,10 +83,13 @@ const Container = styled.div`
   }
   .benifits-wrapper {
     display: flex;
-    width: 1125px;
+    // width: 100vw;
     height: 450px;
     gap: 20px;
+    padding: 0 80px;
     margin: auto;
+    justify-content: center;
+    align-items: center;
     .flex-container {
       width: 553px;
       height: 100%;
@@ -114,22 +118,23 @@ const Container = styled.div`
       }
       .description-wrapper {
         position: absolute;
-        max-width: 424px;
+        max-width: 90%;
         top: 230px;
         left: 29px;
         h1 {
-            width: 175px;
-            font-size: 40px;
-            line-height: 50px;
-            letter-spacing: -1.5px;
-            align-self: flex-start;
+          width: 175px;
+          font-size: 40px;
+          line-height: 50px;
+          letter-spacing: -1.5px;
+          align-self: flex-start;
         }
         p {
-            width: 424px;
-            font-size: 15px;
-            line-height: 20px;
-            font-weight: 400;
-            text-align: left !important;
+          // width: 424px;
+          width: 100%;
+          font-size: 15px;
+          line-height: 20px;
+          font-weight: 400;
+          text-align: left !important;
         }
       }
     }

@@ -5,16 +5,13 @@ import unlock_graph from "../Assets/unlock_graph.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-
-
 const ExploreMarket = () => {
-
   useEffect(() => {
     Aos.init();
   }, []);
 
   return (
-    <Container  >
+    <Container>
       <div className="description-wrapper" data-aos="fade-up" data-aos-offset="200">
         <h1>
           Explore the Markets like it is your <span>Playground.</span>
@@ -22,7 +19,7 @@ const ExploreMarket = () => {
         <p>Search for your favorite coins and stay ahead of the market</p>
       </div>
       <div className="graph-wrapper" data-aos="fade-up" data-aos-offset="250">
-        <img src={graph} alt="graph" />
+        <img src={graph} alt="graph" style={{ objectFit: "scale-down" }} />
       </div>
       <Button>Explore Markets</Button>
       <div className="unlock-fronters-wrapper" data-aos="fade-up" data-aos-offset="200">
@@ -89,9 +86,16 @@ const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1134px;
+    width: 100vw;
     height: 670px;
     margin: 64px auto;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    img {
+      object-fit: scale-down;
+      width: 100%;
+      height: 100%;
+    }
   }
 
   .unlock-fronters-wrapper {
@@ -122,7 +126,7 @@ const Container = styled.div`
       display: flex;
       justify-content: space-between;
       align-items: center;
-      width: 1140px;
+      width: 80vw;
       height: 170px;
       border-radius: 8px;
       border: 1px solid rgba(255, 255, 255, 0.25);
@@ -146,11 +150,17 @@ const Container = styled.div`
     }
   }
   .unlock-graph-wrapper {
-    height: 510px;
-    width: 1130px;
+    // height: 510px;
+    // width: 80vw;
     padding-top: 70px;
     margin: 0px auto 90px;
     box-sizing: border-box;
+    overflow-x: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 `;
 

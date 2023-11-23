@@ -144,7 +144,7 @@ const Container = styled.div`
 `;
 
 const ImageContainer = styled.div`
-  width: 1446px;
+  width: 100vw;
   height: 800px;
   margin: auto;
   background-image: linear-gradient(rgba(0, 0, 0, 0.467), rgba(0, 0, 0, 0.4)),
@@ -178,13 +178,14 @@ const ImageContainer = styled.div`
   .flex-container {
     border: 1px solid rgba(255, 255, 255, 0.25);
     background-color: rgba(16, 16, 16, 0.5);
-    width: 1140px;
+    // width: 1140px;
+    box-sizing: border-box;
     height: 170px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-radius: 2px;
-    margin: 20px auto 80px;
+    margin: 20px 80px 80px;
     box-sizing: border-box;
     div {
       width: 285px;

@@ -46,7 +46,7 @@ const Visionaries = () => {
 const Container = styled.div`
   background-color: rgba(25, 25, 29, 1) !important;
   height: 876px;
-  width: 1446px;
+  width: 100vw;
   margin: auto;
 
   .description-wrapper {
@@ -67,7 +67,7 @@ const Container = styled.div`
   }
 
   .flex-container {
-    width: 1126px;
+    // width: 1126px;
     height: 450px;
     gap: 20px;
     display: flex;

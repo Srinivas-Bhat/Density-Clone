@@ -71,7 +71,8 @@ const Container = styled.div`
   background-color: #fff !important;
   padding-bottom: 80px;
   .title-wrapper {
-    width: 1126px;
+    width: 100vw;
+    // padding: 0 80px;
     height: 167px;
     margin: auto;
     padding-top: 100px;
@@ -96,15 +97,19 @@ const Container = styled.div`
   }
 
   .testimonial-container {
-    width: 1126px;
+
+    width: 100vw;
     height: 450px;
     gap: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 64px auto 0;
+    margin: 64px 0px 0;
+    box-sizing: border-box;
     .testimony {
-      width: 362px;
+    overflow-x: hidden;
+
+      width: 360px;
       height: 450px;
       background-color: rgba(243, 243, 243, 1);
       position: relative;
@@ -125,7 +130,7 @@ const Container = styled.div`
         left: 29px;
 
         p {
-          font-size: 20px;
+          font-size: 18px;
           line-height: 28px;
           color: rgba(102, 102, 115, 1);
         }

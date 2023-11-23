@@ -23,7 +23,7 @@ const StartNow = () => {
 
 const Container = styled.div`
   background-color: #000 !important;
-  width: 1446px;
+  width: 100vw;
   margin: auto;
   padding: 110px 0 180px 0;
 
