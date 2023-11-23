@@ -98,18 +98,18 @@ const Container = styled.div`
 
   .testimonial-container {
 
-    width: 100vw;
+    width: 95vw;
     height: 450px;
     gap: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 64px 0px 0;
+    margin: 64px auto 0;
     box-sizing: border-box;
     .testimony {
     overflow-x: hidden;
 
-      width: 360px;
+      width: 350px;
       height: 450px;
       background-color: rgba(243, 243, 243, 1);
       position: relative;
@@ -123,13 +123,14 @@ const Container = styled.div`
         opacity: 55%;
       }
       .experts {
-        width: 303px;
+        // width: 303px;
         height: 196px;
         position: absolute;
         top: 40px;
         left: 29px;
 
         p {
+          width: 100%;
           font-size: 18px;
           line-height: 28px;
           color: rgba(102, 102, 115, 1);
